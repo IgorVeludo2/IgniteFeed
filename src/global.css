@@ -10,7 +10,15 @@
 
   --green-300: #00B37E;
   --green-500: #00875f;
-} 
+}
+
+/* Tira a borda branca de todos os elementos HTML (deixando transparente)
+  e faz com que se crie uma cor verde ao clicar no elemento
+*/
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--green-500);
+}
 
 * { /* O sinal de * significa todas as tags */
   margin: 0;
